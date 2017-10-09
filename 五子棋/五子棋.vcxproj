@@ -30,7 +30,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -45,7 +45,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -204,7 +204,19 @@
     <None Include="res\My.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\Pictures\1.bmp" />
+    <Image Include="..\..\..\..\Pictures\bak.png" />
+    <Image Include="..\..\..\..\Pictures\hei.bmp" />
+    <Image Include="..\..\..\..\Pictures\wat.bmp" />
+    <Image Include="..\..\..\..\Pictures\wat.png" />
+    <Image Include="..\..\..\..\Pictures\开始1.png" />
+    <Image Include="..\..\..\..\Pictures\开始2.png" />
+    <Image Include="..\..\..\..\Pictures\退出2.1.png" />
+    <Image Include="..\..\..\..\Pictures\退出2.png" />
     <Image Include="res\五子棋.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\..\..\Documents\up.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

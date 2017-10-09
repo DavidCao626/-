@@ -26,16 +26,17 @@ protected:
 	HICON m_hIcon;
 	CPoint m_centPoint;
 	int m_bOrder=1;  //刚刚谁下过了
-	int m_igameRule[14][14] = { 0 };
-	int m_igameVictoryList[4] = { 0 };
-	
-	CUIntArray m_igameList;
+	int m_igameRule[15][15] = { 0 };
+	int m_gameStart = 0; //判断游戏是否开始
+
+
 	// 生成的消息映射函数
 	virtual BOOL OnInitDialog();
+	BOOL GameInit();
 	BOOL HelpRect(COLORREF);
-	void Flag(COLORREF);
+	void Flag(int i);
 	bool m_bIsRule(int player);//检测谁胜利了
-
+	
 
 
 	afx_msg void OnPaint();
